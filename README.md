@@ -3,7 +3,9 @@ This project is a simple note taker, that comes in handy for keeping records of 
 
 # Technologies Used
 Nodejs and Expressjs for server creation
+
 MongoDB as database
+
 Morgan as middleware
 
 # Folder Structure
