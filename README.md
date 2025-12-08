@@ -10,6 +10,7 @@ Middleware: Morgan
 # FolderStructure
 The folder structure is based on the MVC architecture, which helps to keep the code organized, and to make debugging easier.
 
+
 ```text
 Simple_Note_App
 ├── .gitignore          // Specifies files/folders Git should ignore.
@@ -21,3 +22,28 @@ Simple_Note_App
     ├── routes/         // Defines all CRUD routes for the Notes.
     ├── config/         // Database connection.
     └── controllers/    // Holds business logic functions
+
+```
+
+## How to run Locally 
+* Clone this Repository
+* Install all Dependencies listed in the package.json file
+* Create the required .env file that will contain your mongoDB connection URI and port.
+
+* Start the Server using 'node index.js' or 'npm run dev' for nodemon to automatically run the server. 
+
+The server will run on http://localhost: (the port specified in your .env).
+
+* You can now test the CRUD endpoints using thubder client,  interacting with the database via the /api/notes route.
+
+## API ENDPOINTS ##
+
+``` text
+| Method | Endpoint | Description | Body Example |
+| :--- | :--- | :--- | :--- |
+| **GET** | `/api/notes` | Retrieves all notes. | N/A |
+| **GET** | `/api/notes/:id` | Retrieves a single note by ID. | N/A |
+| **POST** | `/api/notes` | Creates a new note. | `{ "title": "Buy Milk" }` |
+| **PUT** | `/api/notes/:id` | Updates an existing note. | `{ "content": "Get skim milk" }` |
+| **DELETE** | `/api/notes/:id` | Deletes a note by ID. | N/A |
+
