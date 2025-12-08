@@ -1,13 +1,13 @@
-# Simple_Note_App
+## Simple_Note_App
 This project is a simple note taker, that comes in handy for keeping records of your day to day activities, to-do list etc. It has a pinned option to easily access important notes, and a simple lock for confidential purposes. It is built to manage simple CRUD operations, using expressjs, mongoDB for data storage and Morgan for request logging and debugging.
 
-# Technologies Used
+## Technologies Used
 Runtime environment: Node.js
 Framework: Express.js
 Database: MongoDB
 Middleware: Morgan
 
-# FolderStructure
+## FolderStructure
 The folder structure is based on the MVC architecture, which helps to keep the code organized, and to make debugging easier.
 
 
@@ -36,14 +36,17 @@ The server will run on http://localhost: (the port specified in your .env).
 
 * You can now test the CRUD endpoints using thubder client,  interacting with the database via the /api/notes route.
 
-## API ENDPOINTS ##
+## API ENDPOINTS 
+
+| Method | Endpoint | Description | 
+| :--- | :--- | :--- | 
+| **GET** | `/api/notes/all-notes` | Retrieves all notes. |
+| **GET** | `/api/notes/find-notes/:id` | Retrieves a single note by ID. |
+| **GET** | `/api/notes/seacrh-notes/` | Search notes by name. |
+| **POST** | `/api/notes/new-notes` | Creates a new note. |
+| **PUT** | `/api/notes/edit-notes/:id` | Updates an existing note. | 
+| **DELETE** | `/api/notes/delete-notes/:id` | Deletes a note by ID. |
+| **DELETE** | `/api/notes/delete-notes| Deletes a note by name. |
 
 
-| Method | Endpoint | Description | Body Example |
-| :--- | :--- | :--- | :--- |
-| **GET** | `/api/notes` | Retrieves all notes. | N/A |
-| **GET** | `/api/notes/:id` | Retrieves a single note by ID. | N/A |
-| **POST** | `/api/notes` | Creates a new note. | `{ "title": "Buy Milk" }` |
-| **PUT** | `/api/notes/:id` | Updates an existing note. | `{ "content": "Get skim milk" }` |
-| **DELETE** | `/api/notes/:id` | Deletes a note by ID. | N/A |
 
