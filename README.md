@@ -16,10 +16,10 @@ The folder structure is based on the MVC architecture, which helps to keep the c
 
 ```text
 Simple_Note_App
-├── .gitignore          // Specifies files/folders Git should ignore.
-├── package.json        // contains all dependencies used in this project.
-├── index.js           // The main entry point and Express application setup.
-├── README.md           // Brief description of the project and how to run it. 
+├── .gitignore      // Specifies files/folders Git should ignore.
+├── package.json    // contains all dependencies used in this project.
+├── index.js        // The main entry point and Express application setup.
+├── README.md       // Brief description of the project and how to run it. 
 ├── models/         // Database Schemas
 ├── routes/         // Defines all CRUD routes for the Notes.
 ├── config/         // Database connection.
@@ -48,7 +48,7 @@ The server will run on http://localhost: (the port specified in your .env).
 | **POST** | `/api/notes/new-notes` | Creates a new note. |
 | **PUT** | `/api/notes/edit-notes/:id` | Updates an existing note. | 
 | **DELETE** | `/api/notes/delete-notes/:id` | Deletes a note by ID. |
-| **DELETE** | `/api/notes/delete-notes| Deletes a note by name. |
+| **DELETE** | `/api/notes/delete-notes`| Deletes a note by name. |
 
 
 
