@@ -38,7 +38,7 @@ The server will run on http://localhost: (the port specified in your .env).
 
 ## API ENDPOINTS ##
 
-``` text
+
 | Method | Endpoint | Description | Body Example |
 | :--- | :--- | :--- | :--- |
 | **GET** | `/api/notes` | Retrieves all notes. | N/A |
