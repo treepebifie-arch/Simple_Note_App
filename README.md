@@ -44,11 +44,11 @@ The server will run on http://localhost: (the port specified in your .env).
 | :--- | :--- | :--- | 
 | **GET** | `/api/notes/all-notes` | Retrieves all notes. |
 | **GET** | `/api/notes/find-notes/:id` | Retrieves a single note by ID. |
-| **GET** | `/api/notes/seacrh-notes/` | Search notes by name. |
+| **GET** | `/api/notes/seacrh-notes/` | Search notes by title. |
 | **POST** | `/api/notes/new-notes` | Creates a new note. |
 | **PUT** | `/api/notes/edit-notes/:id` | Updates an existing note. | 
 | **DELETE** | `/api/notes/delete-notes/:id` | Deletes a note by ID. |
-| **DELETE** | `/api/notes/delete-notes`| Deletes a note by name. |
+| **DELETE** | `/api/notes/delete-notes`| Deletes a note by title. |
 
 
 
